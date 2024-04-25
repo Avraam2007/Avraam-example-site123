@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.2s;
+  cursor: pointer;
+}
+a:hover {
+  color: rgb(234, 234, 47);
+}
+a:focus {
+  color: rgb(182, 182, 182);
+}
+
+p {
+  font-family: "PT Sans", sans-serif;
+}
+
+header {
+  height: 90px;
+  position: fixed;
+  width: 100%;
+  background-color: #202846;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+header .nav {
+  width: 1200px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav .nav-text {
+  width: 16.6666666667%;
+  text-align: center;
+  color: #fff;
+  font-family: "PT Sans", sans-serif;
+  font-style: none;
+  font-weight: 700;
+  font-size: 24px;
+  border-right: 2px solid white;
+}
+header .nav .nav-text:last-child {
+  border-right: none;
+}
+header .nav .lang {
+  width: 16.6666666667%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header .nav .lang .lang-img {
+  width: 60px;
+}
+header .nav .lang .dropbtn {
+  width: 57px;
+  height: 44px;
+  background-color: #202846;
+  border: none;
+}
+header .nav .lang .lang-content {
+  display: none;
+  position: absolute;
+  width: 57px;
+  height: 105px;
+  background-color: #202846;
+  min-width: 30px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+header .nav .lang .lang-content a {
+  text-align: center;
+  display: block;
+  color: white;
+  width: 57px;
+  height: 35px;
+  font-family: "PT Sans", sans-serif;
+  font-style: none;
+  font-weight: 700;
+  font-size: 24px;
+}
+header .nav .lang .lang-content a:focus {
+  background-color: #39477a;
+}
+header .nav .lang .dropdown:hover .lang-content {
+  display: block;
+}
+header .logo-image {
+  width: 179px;
+  height: 70px;
+  border-radius: 35px;
+  background: url("https://s3-alpha-sig.figma.com/img/ca5e/0ff9/3ae21a385ab1edee756a77763a1f44b2?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cFKWEnhKCh1U-j5uQkLMXxHDe6MbX9P~1HsRcMhEvOQB8s1iCPOYGaf89Bi5WKy9cgZJ~LSumPu3jwzLmltEUg3FiBxszWWO6sh1e1cuRG3xLutnYdVc6bQoTU1HbiZlVLP64BC4La7j2p-nNxnncshrcRwQf5H72YmyZdvvnEYMLoYYa1Lt5uZBmfVp2cKgtczuXaQcLWb1wfz~ohTIeJb7mEjnrrYD6z5Y2a~RKEad3UWdmIIibYBbt0yqLVaGZyLL~TtqRPGsp~DzVDDipcaVyYnD3PXlhY3m1LZf-g47VLv~1Rxw6kCuYGeUp1wyw4yxPRfyAPP8mGAhnTjmKA__");
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  height: 2200px;
+  background-color: #dcdcdc;
+}
+main .cover {
+  margin: 133px auto 53px auto;
+  width: 82%;
+  height: 370px;
+  color: #fff;
+  background: url("https://s3-alpha-sig.figma.com/img/8680/9dc1/8667d2d2478f7934d5622a0ff53c02aa?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pgaiecaGjL--~UCTSNWr2ywGPFChN4TePYRa4FzyiQjHvV2PKgkXmJtouHxUNiVClGr5Iiv4lL3Nq7yiSTu0mAoyUk~d-HbNz-oUXx78nyyyDBpj~rDuj8KufD4P2MqIseVwxNW-MzHfHA7Vo56AyfUFsvN5uW9pn2E9kyAux2~gsxQLW64w9kbuHXI-qrQ7C9qawRaKvZqHecSO2sqmPR~7l2OLt0GbDYLs-JClxLwVy9aZsN5Pp2~mm6vAetN8JtZhE4htckYRSbk2Ieg8utxmXvkopsy2wlaFpPYRL7EDbjJhWB~cunSFFiIa0RCfYvp7crzG2e4jXyvx9tsRjQ__");
+  background-size: cover;
+  background-position: center;
+}
+main .cover .cover-img {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(82, 82, 82, 0.4);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .cover .cover-img .cover-title {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 75px;
+}
+main .cover .cover-img .cover-desc {
+  font-family: "PT Sans", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 50px;
+}
+main .about {
+  width: 82%;
+  height: 605px;
+  background: url("https://s3-alpha-sig.figma.com/img/4594/e2e9/2746eaef50497134df22ea41ad7c16f1?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=g~NeEVbNmAdG~l5RqskFQzO5Cw77Ez8CygsQCA1y~DyU5716EVX3n4zv2DFIKot8~xV7MmBDEokrkx64DTvcax59eqhr3egPOyq-FEMTQmlkEInozAQQx9dgdKUYHuwZ3wSPMOCftY4t4q0iQPXdqaFxHf6LasyWYl2Omsk~EoOUJLn~0i7SM9mVgQYJq~KwnbA69fDW0H0WRDhbAUTS2dQcmSYljJBa3Ut3aRXLyFtkYW-fXV5Ew0CyLPW5hr7cYB6HtoCVzLS8kMxepsGFyBBrw0cAncMg4S6clHAFp5mkDidAS0PPTmsL6Do8mqxe2WUElN-rTdS8sdHgS6kcJw__");
+  background-size: cover;
+  margin: 0 auto;
+  background-position: center;
+}
+main .enjoy {
+  margin: 49px auto;
+  width: 82%;
+  height: 390px;
+  background-color: #c1c1c3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main .enjoy .enjoy-img {
+  width: 47%;
+  height: 349px;
+}
+main .enjoy .text-box {
+  margin-left: 20px;
+  background-color: #cbcbcb;
+  width: 43%;
+  height: 349px;
+}
+main .enjoy .text-box .text {
+  width: 91%;
+  color: #202846;
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  transform: translate(-50%, -50%);
+  position: relative;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+}
+main .form {
+  width: 27%;
+  height: 481px;
+  background-color: #F2EEEE;
+  margin: 0 auto;
+  border: 3px solid #aaaaaa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main .form .title {
+  margin-top: 15px;
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: #414141;
+}
+main .form .text {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+}
+main .form .input-box {
+  width: 79%;
+}
+main .form .input {
+  margin-top: 15px;
+  width: 100%;
+  height: 62px;
+  border: 2px solid #90A4AE;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+main .form .submit {
+  width: 100%;
+  height: 104px;
+  background-color: #444765;
+  color: #fff;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+main .form .submit:focus {
+  background-color: #707497;
+}
+
+footer {
+  background-color: #202846;
+  height: 90px;
+  padding-left: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+footer .cc {
+  color: #fff;
+  font-family: "PT Sans", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+/*# sourceMappingURL=style.css.map */

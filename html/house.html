@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/house.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://s3-alpha-sig.figma.com/img/ca5e/0ff9/3ae21a385ab1edee756a77763a1f44b2?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cFKWEnhKCh1U-j5uQkLMXxHDe6MbX9P~1HsRcMhEvOQB8s1iCPOYGaf89Bi5WKy9cgZJ~LSumPu3jwzLmltEUg3FiBxszWWO6sh1e1cuRG3xLutnYdVc6bQoTU1HbiZlVLP64BC4La7j2p-nNxnncshrcRwQf5H72YmyZdvvnEYMLoYYa1Lt5uZBmfVp2cKgtczuXaQcLWb1wfz~ohTIeJb7mEjnrrYD6z5Y2a~RKEad3UWdmIIibYBbt0yqLVaGZyLL~TtqRPGsp~DzVDDipcaVyYnD3PXlhY3m1LZf-g47VLv~1Rxw6kCuYGeUp1wyw4yxPRfyAPP8mGAhnTjmKA__" type="image/x-icon">
+    <title>Будинок</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-image"></div>
+        <nav class="nav">
+            <p class="nav-text"><a href="./index.html" class="nav-link">ГОЛОВНА</a></p>
+            <p class="nav-text"><a href="./about.html" class="nav-link">ПРО НАС</a></p>
+            <p class="nav-text"><a href="./book.html" class="nav-link">ЗАБРОНЮВАТИ</a></p>
+            <p class="nav-text"><a href="./contact.html" class="nav-link">КОНТАКТИ</a></p>
+            <p class="nav-text"><a href="./account.html" class="nav-link">ОСОБИСТИЙ<br>КАБІНЕТ</a></p>
+            <div class="lang">
+                <img src="../img/lang.png" alt="language" class="lang-img">
+                <div class="dropdown">
+                    <button class="dropbtn"><p class="nav-text"><a href="#" class="nav-link">UA</a></p></button>
+                    <div class="lang-content">
+                      <a href="#">UA</a>
+                      <a href="#">RU</a>
+                      <a href="#">EN</a>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <main class="content">
+        <div class="title-cover">
+            <h1 class="title">Бронювання будиночка в Карпатах</h1>
+        </div>
+        <div class="cover">
+            <div class="first-divide-a">
+                <div class="div-image-1"></div>
+                <div class="div-image-2"></div>
+            </div>
+            <div class="first-divide-b">
+                <div class="text-box">
+                    <p class="text">Затишні дерев’яні будиночки, які заховались
+                        на окраїні лісу, зустрічатимуть Вас чудовим
+                        краєвидом на ранкові полонини.<br><br>
+                        
+                        Ви можете обрати кількість кімнат та місце, яке
+                        буде ідеальним для Вас. Територія, на якій базуються будиночки, підійде як і для великих компаній, яким потрібно бути поряд у декількох будинках, так і
+                        для пар, які хочуть бути на одинці.</p>
+                </div>
+                <div class="second-divide">
+                    <div class="div-image-1"></div>
+                    <div class="div-image-2"></div>
+                </div>
+            </div>
+        </div>
+        <h4 class="list-title">Наявність місць</h4>
+        <form class="form">
+            <p class="text">Коли б Ви хотіли зупинись в помешканні Полонини Карпат?</p>
+            <div class="date-box">
+                <div class="dates">
+                    <label for="in">
+                        <p class="text">Дата заїзду</p>
+                        <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="indate" id="in" placeholder="📅 Дата заїзду" class="date" required>
+                    </label>
+                    <label for="out">
+                        <p class="text">Дата виїзду</p>
+                        <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="outdate" id="out" placeholder="📅 Дата виїзду" class="date" required>
+                    </label>
+                </div>
+                <button class="submit">Перевірити наявність вільних місць</button>
+            </div>
+            <div class="counter-box">
+                <label for="rooms">
+                    <p class="text">Номери</p>
+                    <input type="number" min="0" max="9" value="1" name="rooms" id="rooms" class="counter">
+                </label>
+                <label for="adults">
+                    <p class="text">Дорослі</p>
+                    <input type="number" min="0" max="9" value="2" name="adults" id="adults" class="counter">
+                </label>
+                <label for="kids">
+                    <p class="text">Діти</p>
+                    <input type="number" min="0" max="9" value="0" name="kids" id="kids" class="counter">
+                </label>
+            </div>
+        </form>
+        <table class="price-table">
+            <tr class="main-row">
+                <td style="width: 16%" class="sector-a">
+                    <p class="text">Вміщує</p>
+                </td>
+                <td style="width: 57%" class="sector-b">
+                    <p class="text">Тип розміщення</p>
+                </td>
+                <td style="width: 27%" class="sector-c">
+                    <p class="text">Ціна</p>
+                </td>
+            </tr>
+            <tr class="second-row">
+                <td class="sector-a">
+                    <div class="img"></div>
+                    <div class="img"></div>
+                </td>
+                <td class="sector-b">
+                    <p class="text">Двомісний номер</p>
+                    <div class="some">
+                        <p class="text">1 широке двоспальне ліжко</p>
+                        <div class="bed"></div>
+                    </div>
+                </td>
+                <td class="sector-c">
+                    <button class="submit-price">Показати ціни</button>
+                </td>
+            </tr>
+        </table>
+    </main>
+    <footer class="footer">
+        <p class="cc">© 2021 HolidayTime.  All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

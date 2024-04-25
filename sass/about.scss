@@ -1,0 +1,197 @@
+$baseColor: #202846;
+$logo-height: 70px;
+
+@mixin makeNav($jc, $fd) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: center;
+}
+
+@mixin makeFont($fs,$fw, $fsz) {
+    font-family: 'PT Sans', sans-serif;
+    font-style: $fs;
+    font-weight: $fw;
+    font-size: $fsz;
+}
+
+
+@mixin centre {
+    transform: translate(-50%,-50%);
+    position: relative;
+    left: 50%;
+    top: 50%;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover{
+        color:rgb(234, 234, 47);
+    }
+
+    &:focus{
+        color:rgb(182, 182, 182);
+    }
+}
+
+p {
+    font-family: 'PT Sans', sans-serif;
+}
+
+header {
+    height: 90px;
+    width: 100%;
+    background-color: $baseColor;
+    @include makeNav(space-around,row);
+
+    .nav {
+        width: 1200px;
+        height: 60px;
+        @include makeNav(space-between,row);
+
+        .nav-text {
+            width: calc(100%/6);
+            text-align: center;
+            color: #fff;
+            @include makeFont(none, 700, 24px);
+            border-right: 2px solid white;
+
+            &:last-child {
+                border-right: none;
+            }
+        } 
+
+        .lang {
+            width: calc(100%/6);
+            @include makeNav(center,row);
+
+            .lang-img {
+                width: 60px;
+            }
+        }
+
+        .dropbtn {
+            width: 57px;
+            height: 44px;
+            background-color: $baseColor;
+            border: none;
+        }
+
+        .lang-content{
+            display: none;
+            position: absolute;
+            width: 57px;
+            height: 105px;
+            background-color: $baseColor;
+            min-width: 30px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+
+            a {
+                text-align: center;
+                display: block;
+                color: white;
+                width: 57px;
+                height: 35px;
+                @include makeFont(none, 700, 24px);
+
+                &:focus {
+                    background-color: #39477a;
+                }
+            }
+        }
+
+        .dropdown:hover {
+            .lang-content {display: block;}
+        }
+
+    }
+
+    .logo-image {
+        width: 179px;
+        height: $logo-height;
+        border-radius: calc($logo-height/2);
+        background: url("https://s3-alpha-sig.figma.com/img/ca5e/0ff9/3ae21a385ab1edee756a77763a1f44b2?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cFKWEnhKCh1U-j5uQkLMXxHDe6MbX9P~1HsRcMhEvOQB8s1iCPOYGaf89Bi5WKy9cgZJ~LSumPu3jwzLmltEUg3FiBxszWWO6sh1e1cuRG3xLutnYdVc6bQoTU1HbiZlVLP64BC4La7j2p-nNxnncshrcRwQf5H72YmyZdvvnEYMLoYYa1Lt5uZBmfVp2cKgtczuXaQcLWb1wfz~ohTIeJb7mEjnrrYD6z5Y2a~RKEad3UWdmIIibYBbt0yqLVaGZyLL~TtqRPGsp~DzVDDipcaVyYnD3PXlhY3m1LZf-g47VLv~1Rxw6kCuYGeUp1wyw4yxPRfyAPP8mGAhnTjmKA__");
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+main {
+    height: 850px;
+    background-color: #dcdcdc;
+
+    .title-cover {
+        width: 100%;
+        height: 140px;
+        padding-left: 223px;
+        background-color: #C6C6DC;
+        @include makeNav(start, row);
+
+        .title {
+            color: $baseColor;
+            @include makeFont(italic, 400, 48px);
+        }
+    }
+
+    .cover  {
+        margin: 23px auto;
+        width: 82%;
+        height: 227px;
+        color: #fff;
+        background: url("https://s3-alpha-sig.figma.com/img/5407/f096/9a82823f722f8bedce4129616eb82a4f?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nIuta51TrDI1wkmhyCVRrJltPMD6eHJAERqPUAoHI0H4pKUP0dJ3IldhWbWHtKDMhOlmHrBGyC2w8tow3x7pGLHaW33Y6xMRn1ulPxeF6h225vsoRmnlgnTyNADoLU8F8c-aD5HVBc2zjYuoPfLNz3-sJUI5~SEwKsB~3ItgoCJomzDdL2hERzK-LZ134p5yYRrNVLJcKZ62UsT~CbSK4KjxEssVUaKqnP-cNqDBNQODLLNfVzG3d8HoGnDdGkocvTUd5AldSVQw1Z0PdubxxwcX63bv~HRgFGJLnBSprndL3Yz6wR0KvgmPwSwS8eMWojsc4tK5Z7GKnGsh8naGCQ__");
+        background-size: cover;
+        background-position: center;
+
+        .cover-img {
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: #525252, $alpha: 0.4);
+            text-align: center;
+            @include makeNav(center, column);
+
+            .cover-title {
+                @include makeFont(normal, 700, 48px);
+            }
+    
+            .cover-desc {
+                @include makeFont(italic, 700, 36px);
+            }
+        }
+    }
+
+    .text-box{
+        margin: 0 auto;
+        background-color: #cbcbcb;
+        width: 82%;
+        height: 380px;
+
+        .text{
+            width: 91%;
+            color: $baseColor;
+            @include makeFont(normal, 400, 30px);
+            @include centre();
+        }
+    }
+}
+
+footer {
+    background-color: $baseColor;
+    height: 90px;
+    padding-left: 60px;
+    @include makeNav(start,row);
+    
+    .cc {
+        color: #fff;
+        @include makeFont(italic, 400, 36px);
+    }
+}

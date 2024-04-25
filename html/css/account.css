@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.2s;
+  cursor: pointer;
+}
+a:hover {
+  color: rgb(234, 234, 47);
+}
+a:focus {
+  color: rgb(182, 182, 182);
+}
+
+p {
+  font-family: "PT Sans", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  background-color: #202846;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+header .nav {
+  width: 1200px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav .nav-text {
+  width: 16.6666666667%;
+  text-align: center;
+  color: #fff;
+  font-family: "PT Sans", sans-serif;
+  font-style: none;
+  font-weight: 700;
+  font-size: 24px;
+  border-right: 2px solid white;
+}
+header .nav .nav-text:last-child {
+  border-right: none;
+}
+header .nav .lang {
+  width: 16.6666666667%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header .nav .lang .lang-img {
+  width: 60px;
+}
+header .nav .dropbtn {
+  width: 57px;
+  height: 44px;
+  background-color: #202846;
+  border: none;
+}
+header .nav .lang-content {
+  display: none;
+  position: absolute;
+  width: 57px;
+  height: 105px;
+  background-color: #202846;
+  min-width: 30px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+header .nav .lang-content a {
+  text-align: center;
+  display: block;
+  color: white;
+  width: 57px;
+  height: 35px;
+  font-family: "PT Sans", sans-serif;
+  font-style: none;
+  font-weight: 700;
+  font-size: 24px;
+}
+header .nav .lang-content a:focus {
+  background-color: #39477a;
+}
+header .nav .dropdown:hover .lang-content {
+  display: block;
+}
+header .logo-image {
+  width: 179px;
+  height: 70px;
+  border-radius: 35px;
+  background: url("https://s3-alpha-sig.figma.com/img/ca5e/0ff9/3ae21a385ab1edee756a77763a1f44b2?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cFKWEnhKCh1U-j5uQkLMXxHDe6MbX9P~1HsRcMhEvOQB8s1iCPOYGaf89Bi5WKy9cgZJ~LSumPu3jwzLmltEUg3FiBxszWWO6sh1e1cuRG3xLutnYdVc6bQoTU1HbiZlVLP64BC4La7j2p-nNxnncshrcRwQf5H72YmyZdvvnEYMLoYYa1Lt5uZBmfVp2cKgtczuXaQcLWb1wfz~ohTIeJb7mEjnrrYD6z5Y2a~RKEad3UWdmIIibYBbt0yqLVaGZyLL~TtqRPGsp~DzVDDipcaVyYnD3PXlhY3m1LZf-g47VLv~1Rxw6kCuYGeUp1wyw4yxPRfyAPP8mGAhnTjmKA__");
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  height: 800px;
+  background-color: #dcdcdc;
+}
+main .title-cover {
+  width: 100%;
+  height: 140px;
+  padding-left: 223px;
+  background-color: #C6C6DC;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+main .title-cover .title {
+  color: #202846;
+  font-family: "PT Sans", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 48px;
+}
+main .account {
+  width: 69%;
+  height: 500px;
+  padding: 50px 0;
+  background-color: #BDBDC6;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+main .account .avatar {
+  width: 22%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main .account .avatar .avatar-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+main .account .avatar .change-btn .change {
+  margin: 0 auto;
+  background-color: #69749B;
+  width: 250px;
+  height: 50px;
+  border-radius: 25px;
+  transition: 0.5s;
+  color: #fff;
+}
+main .account .avatar .change-btn .change:hover {
+  background-color: rgb(142, 147, 164);
+}
+main .account .avatar .change-btn .change .change-text {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  transform: translate(-50%, -50%);
+  position: relative;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+}
+main .account .avatar .set-btn .set {
+  margin: 0 auto;
+  background-color: #484A54;
+  width: 250px;
+  height: 50px;
+  border-radius: 25px;
+  transition: 0.5s;
+  color: #fff;
+}
+main .account .avatar .set-btn .set:hover {
+  background-color: #a3a3a7;
+}
+main .account .avatar .set-btn .set .set-text {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  transform: translate(-50%, -50%);
+  position: relative;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+}
+main .account .bio {
+  width: 55%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main .account .bio .bio-p {
+  width: 100%;
+  padding-bottom: 10px;
+  text-align: left;
+  border-bottom: 3px solid #fff;
+  font-family: "PT Sans", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 36px;
+  color: #202846;
+}
+main .account .bio a:hover {
+  color: #000;
+}
+main .about-btn .about {
+  margin: 0 auto;
+  background-color: #202846;
+  width: 200px;
+  height: 60px;
+  border-radius: 30px;
+  transition: 0.5s;
+  color: #fff;
+}
+main .about-btn .about:hover {
+  background-color: #343b54;
+}
+main .about-btn .about .about-text {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  transform: translate(-50%, -50%);
+  position: relative;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+}
+
+footer {
+  background-color: #202846;
+  height: 90px;
+  padding-left: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+footer .cc {
+  color: #fff;
+  font-family: "PT Sans", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+@media (max-width: 1100px) {
+  header .nav {
+    width: 100%;
+    height: 60px;
+  }
+  header .nav .nav-text {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  header .nav .nav-text:last-child {
+    border-right: none;
+  }
+  header .nav .lang .lang-img {
+    width: 20px;
+  }
+  header .nav .dropbtn {
+    width: 35px;
+    height: 44px;
+  }
+  header .nav .lang-content {
+    width: 35px;
+    height: 105px;
+  }
+  header .nav .lang-content a {
+    text-align: center;
+    display: block;
+    color: white;
+    width: 35px;
+    height: 35px;
+    font-family: "PT Sans", sans-serif;
+    font-style: none;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  header .logo-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  main .title-cover {
+    padding-left: 100px;
+    background-color: #C6C6DC;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+  }
+  main .title-cover .title {
+    color: #202846;
+    font-family: "PT Sans", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 36px;
+  }
+  main .account {
+    width: 90%;
+    height: 500px;
+    padding: 20px 0;
+  }
+  main .account .avatar {
+    width: 22%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .account .avatar .avatar-img {
+    width: 130px;
+    height: 130px;
+  }
+  main .account .avatar .change-btn .change {
+    background-color: #69749B;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    transition: 0.5s;
+    color: #fff;
+  }
+  main .account .avatar .change-btn .change .change-text {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  main .account .avatar .set-btn .set {
+    background-color: #484A54;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    transition: 0.5s;
+    color: #fff;
+  }
+  main .account .avatar .set-btn .set .set-text {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  main .account .bio {
+    width: 60%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .account .bio .bio-p {
+    font-family: "PT Sans", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 27px;
+  }
+  main .about-btn .about {
+    margin: 0 auto;
+    background-color: #202846;
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    transition: 0.5s;
+    color: #fff;
+  }
+  main .about-btn .about:hover {
+    background-color: #343b54;
+  }
+  main .about-btn .about .about-text {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    transform: translate(-50%, -50%);
+    position: relative;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+  }
+  footer {
+    height: 70px;
+  }
+  footer .cc {
+    font-family: "PT Sans", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+  }
+}
+
+/*# sourceMappingURL=account.css.map */

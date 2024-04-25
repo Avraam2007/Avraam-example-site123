@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://s3-alpha-sig.figma.com/img/ca5e/0ff9/3ae21a385ab1edee756a77763a1f44b2?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cFKWEnhKCh1U-j5uQkLMXxHDe6MbX9P~1HsRcMhEvOQB8s1iCPOYGaf89Bi5WKy9cgZJ~LSumPu3jwzLmltEUg3FiBxszWWO6sh1e1cuRG3xLutnYdVc6bQoTU1HbiZlVLP64BC4La7j2p-nNxnncshrcRwQf5H72YmyZdvvnEYMLoYYa1Lt5uZBmfVp2cKgtczuXaQcLWb1wfz~ohTIeJb7mEjnrrYD6z5Y2a~RKEad3UWdmIIibYBbt0yqLVaGZyLL~TtqRPGsp~DzVDDipcaVyYnD3PXlhY3m1LZf-g47VLv~1Rxw6kCuYGeUp1wyw4yxPRfyAPP8mGAhnTjmKA__" type="image/x-icon">
+    <title>Головна</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-image"></div>
+        <nav class="nav">
+            <p class="nav-text"><a href="./index.html" class="nav-link">ГОЛОВНА</a></p>
+            <p class="nav-text"><a href="./about.html" class="nav-link">ПРО НАС</a></p>
+            <p class="nav-text"><a href="./book.html" class="nav-link">ЗАБРОНЮВАТИ</a></p>
+            <p class="nav-text"><a href="./contact.html" class="nav-link">КОНТАКТИ</a></p>
+            <p class="nav-text"><a href="./account.html" class="nav-link">ОСОБИСТИЙ<br>КАБІНЕТ</a></p>
+            <div class="lang">
+                <img src="../img/lang.png" alt="language" class="lang-img">
+                <div class="dropdown">
+                    <button class="dropbtn"><p class="nav-text"><a href="#" class="nav-link">UA</a></p></button>
+                    <div class="lang-content">
+                      <a href="#">UA</a>
+                      <a href="#">RU</a>
+                      <a href="#">EN</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="content">
+        <br>
+        <div class="cover">
+            <div class="cover-img">
+                <h2 class="cover-title">HolidayTime</h2>
+                <p class="cover-desc">Автентичний відпочинок серед українського колориту!</p>
+            </div>
+        </div>
+        <div class="about">
+            <div class="about-text"></div>
+            <div class="about-btn"></div>
+            <a href="" class="arrow"></a>
+        </div>
+        <div class="enjoy">
+            <img src="https://s3-alpha-sig.figma.com/img/c238/9fc4/f853ca4bd1abdaabe8cd744045a5f837?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XafRMnzxCmYWud~WU8dmD7YndwSfV~Y9HEv6fZvjx8vwIn0nQvH0mIwZDPmYvIvdMSJqjeOm7GNYOX-UWCyVx5MGfkb1V~mbqpjxbCaS~bHECz2do3Wr6jn6s7uhZVKY-6b1v92~TFK2oyh1SmYpH7yenIA-8-KC-~w4iapGquiGycf-iFlGqJjqFtJw3opzk5QeGSVhpvtvMo0lKhCV41ugrddivNXgecRVWlfEC4vUra-ZcCL8-T~FxH49qB2brUX~BexNL0E~PvDZ0Rm2oWcWGiHBNzSIsZL3Jhi762N4wozBN9xh8SqDS9-2lZruN56~zLHrpkTD6kBOE2IQtA__" alt="Pair at home" class="enjoy-img">
+            <div class="text-box">
+                <p class="text">Активний відпочинок у нетипових лоцаціях. Незаймана природа та місцевий колорит подарують Вам незабутні враження.</p>
+            </div>
+        </div>
+        <form action="" class="form">
+            <h4 class="title">Зворотній зв’язок</h4>
+            <label for="name-input" class="input-box">
+                <p class="text">Ім'я</p>
+                <input class="input" type="text" name="name" id="name-input" placeholder="Введіть ім'я" required>
+            </label>
+            <label for="tel-input" class="input-box"> 
+                <p class="text">Номер телефону</p>
+                <input class="input" type="tel" name="tel" id="tel-input" placeholder="Введіть номер телефону" required>
+            </label>
+            <button class="submit">Запросити виклик</button>           
+        </form>
+    </main>
+    <footer class="footer">
+        <p class="cc">© 2021 HolidayTime.  All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
