@@ -295,9 +295,7 @@ footer .cc {
     font-size: 18px;
   }
   header .logo-image {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+    display: none;
   }
   main .title-cover {
     padding-left: 100px;

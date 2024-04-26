@@ -287,8 +287,7 @@ footer {
         }
     
         .logo-image {
-            @include makeWH(30px, 30px);
-            border-radius: 50%;
+            display: none;
         }
     }
 

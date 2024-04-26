@@ -30,7 +30,7 @@ header {
 }
 header .nav {
   width: 1200px;
-  height: 60px;
+  height: 600px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -102,7 +102,7 @@ header .logo-image {
 }
 
 main {
-  height: 2000px;
+  height: 1800px;
   background-color: #dcdcdc;
 }
 main .title-cover {
@@ -172,22 +172,33 @@ main .book-content .book:first-child {
   margin-top: 0;
 }
 main .book-content .book .star {
-  width: 0;
-  height: 0;
+  width: 50px;
+  height: 50px;
   display: inline-block;
   color: #fff;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
-  position: relative;
-  top: -60%;
-  left: 58%;
+  position: absolute;
+  left: 87%;
   transform: translate(-50%, -50%);
   z-index: 2;
 }
 main .book-content .book .star:focus {
   color: #ffff00;
+}
+main .book-content .book [class$=a] {
+  top: 481px;
+}
+main .book-content .book [class$=b] {
+  top: 816px;
+}
+main .book-content .book [class$=c] {
+  top: 1153px;
+}
+main .book-content .book [class$=d] {
+  top: 1489px;
 }
 main .book-content .book .info {
   width: 48%;
@@ -221,9 +232,9 @@ main .book-content .book .info .book-desc .desc-text {
 }
 main .book-content .book .info .about-btn {
   transform: translate(-50%, -50%);
-  position: relative;
+  position: absolute;
   top: 0%;
-  left: 0%;
+  left: 87%;
 }
 main .book-content .book .info .about-btn .about {
   background-color: #202846;
@@ -244,6 +255,18 @@ main .book-content .book .info .about-btn .about .about-text {
   top: 50%;
   text-align: center;
 }
+main .book-content .book .info [class$=a] {
+  top: 714px;
+}
+main .book-content .book .info [class$=b] {
+  top: 1049px;
+}
+main .book-content .book .info [class$=c] {
+  top: 1386px;
+}
+main .book-content .book .info [class$=d] {
+  top: 1722px;
+}
 
 footer {
   background-color: #202846;
@@ -262,23 +285,292 @@ footer .cc {
   font-size: 36px;
 }
 
-@media screen and (max-width: 1400px) {
-  .nav-text {
-    font-family: "PT Sans", sans-serif;
-    font-style: none;
-    font-weight: 500;
-    font-size: 18px;
+@media (max-width: 1600px) {
+  main .book-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
   }
-  .book-desc {
+  main .book-content .book-choose {
+    width: 78%;
+    height: 73px;
+    margin: 56px 0;
+    background-color: #e8e8e8;
+  }
+  main .book-content .book-choose .choose-title {
+    text-align: center;
     font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 28px;
+    transform: translate(-50%, -50%);
+    position: relative;
+    left: 50%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.61);
   }
-  .cc {
+  main .book-content .book-choose .triangle {
+    width: 33px;
+    height: 30px;
+    background: url("../img/triangle.png");
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 95%;
+    background-size: cover;
+    background-position: center;
+  }
+  main .book-content .book {
+    width: 78%;
+    height: 300px;
+    margin-top: 36px;
+    padding: 29px 5%;
+    background-color: #BDBDC6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .book-content .book:first-child {
+    margin-top: 0;
+  }
+  main .book-content .book .star {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    color: #fff;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    position: absolute;
+    left: 87%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  main .book-content .book .star:focus {
+    color: #ffff00;
+  }
+  main .book-content .book [class$=a] {
+    top: 481px;
+  }
+  main .book-content .book [class$=b] {
+    top: 816px;
+  }
+  main .book-content .book [class$=c] {
+    top: 1153px;
+  }
+  main .book-content .book [class$=d] {
+    top: 1489px;
+  }
+  main .book-content .book .info {
+    width: 48%;
+  }
+  main .book-content .book .info .book-title {
     font-family: "PT Sans", sans-serif;
     font-style: italic;
-    font-weight: 100;
+    font-weight: 700;
+    font-size: 32px;
+  }
+  main .book-content .book .info .book-desc {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #202846;
+  }
+  main .book-content .book .info .book-desc .desc-text {
+    transform: translate(-50%, -50%);
+    position: relative;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    width: 90%;
+  }
+  main .book-content .book .info .about-btn {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 0%;
+    left: 87%;
+  }
+  main .book-content .book .info .about-btn .about {
+    background-color: #202846;
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    z-index: 2;
+  }
+  main .book-content .book .info .about-btn .about .about-text {
+    color: #fff;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    transform: translate(-50%, -50%);
+    position: relative;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+  }
+  main .book-content .book .info [class$=a] {
+    top: 714px;
+  }
+  main .book-content .book .info [class$=b] {
+    top: 1049px;
+  }
+  main .book-content .book .info [class$=c] {
+    top: 1386px;
+  }
+  main .book-content .book .info [class$=d] {
+    top: 1722px;
+  }
+}
+@media (max-width: 1100px) {
+  header .nav {
+    width: 100%;
+    height: 60px;
+  }
+  header .nav .nav-text {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  header .nav .nav-text:last-child {
+    border-right: none;
+  }
+  header .nav .lang .lang-img {
+    width: 20px;
+  }
+  header .nav .dropbtn {
+    width: 35px;
+    height: 44px;
+  }
+  header .nav .lang-content {
+    width: 35px;
+    height: 105px;
+  }
+  header .nav .lang-content a {
+    text-align: center;
+    display: block;
+    color: white;
+    width: 35px;
+    height: 35px;
+    font-family: "PT Sans", sans-serif;
+    font-style: none;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  header .logo-image {
+    display: none;
+  }
+  main {
+    height: 1800px;
+  }
+  main .title-cover {
+    width: 100%;
+    height: 140px;
+    padding-left: 50px;
+  }
+  main .title-cover .title {
+    font-family: "PT Sans", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 26px;
+  }
+  main .book-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  main .book-content .book-choose {
+    width: 90%;
+  }
+  main .book-content .book-choose .choose-title {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+  }
+  main .book-content .book-choose .triangle {
+    width: 25px;
+    height: 25px;
+    background: url("../img/triangle.png");
+  }
+  main .book-content .book {
+    width: 90%;
+    height: 300px;
+    margin-top: 36px;
+    padding: 29px 5%;
+    background-color: #BDBDC6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .book-content .book:first-child {
+    margin-top: 0;
+  }
+  main .book-content .book .book-img {
+    width: 50%;
+  }
+  main .book-content .book .star {
+    width: 30px;
+    height: 30px;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+  }
+  main .book-content .book .info {
+    width: 48%;
+  }
+  main .book-content .book .info .book-title {
+    font-family: "PT Sans", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 26px;
+  }
+  main .book-content .book .info .book-desc {
+    height: 184px;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  main .book-content .book .info .about-btn .about {
+    margin: 0 auto;
+    background-color: #202846;
+    width: 140px;
+    height: 50px;
+    border-radius: 25px;
+    transition: 0.5s;
+    color: #fff;
+  }
+  main .book-content .book .info .about-btn .about:hover {
+    background-color: #343b54;
+  }
+  main .book-content .book .info .about-btn .about .about-text {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    transform: translate(-50%, -50%);
+    position: relative;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+  }
+  footer {
+    height: 70px;
+  }
+  footer .cc {
+    font-family: "PT Sans", sans-serif;
+    font-style: italic;
+    font-weight: 400;
     font-size: 24px;
   }
 }
